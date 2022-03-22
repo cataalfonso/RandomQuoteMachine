@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./index.css" />
+
+     <!--Buttons images-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Random Quote Machine</title>
+
+   <!-- <script src="./index.js" defer></script>-->
+    <script src="./quote.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+    <div id="quote-box">
+        <p id="text"></p>
+        <h2 id="author"></h2>
+        <div class="button-container">
+        <div>
+        <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank"><i class="fab fa-twitter fa-2xl"></i></a>   
+        <a class="button" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank""><i class="fab fa-tumblr fa-2xl"></i></a>   
+        </div>   
+        <div>
+        <button class="button" id="new-quote">Next Quote</button>
+        </div>
+     </div>
+     </div>  
+</body>
+</html>

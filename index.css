@@ -1,0 +1,137 @@
+/* ----------- */
+/* Reset */
+/* ----------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins */
+body,
+h1,
+h2,
+h3,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-weight: 400;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  display:flex;
+  justify-content: center;
+  overflow-x: hidden;
+  background-color: darkseagreen;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom properties*/
+
+.wrapper{
+    position:relative;
+    align-self: center;
+    width: 50%;   
+}
+
+#quote-box{
+    justify-content: space-around;
+    padding: 20px 10px;
+    border-radius: 0% 10% 0% 0%;
+    background-color: white;
+    border: 5px solid gray;
+}
+
+#text{
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    color: darkseagreen;
+}
+
+#text > span{
+    font-size:4rem;
+}
+
+#author{
+    text-align:right;
+    padding: 20px 10px;
+    font-size: 1 em;
+    color: darkseagreen
+}
+
+.button-container{
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.button{
+    margin: 10px 10px;
+    padding: 10px 20px;
+    background-color: darkseagreen;
+    color: white;
+    font-size: 1rem;
+    text-align:center;
+    border-radius: 10%;
+    border:none;
+
+}
+
